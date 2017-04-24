@@ -1,0 +1,49 @@
+<div class="cartesian container container-fixed">
+  <h4 class="centered">Enter X and Y coordinates</h4>
+  <p class="centered">Change the coordinate values to visualize points sorted by distance.</p>
+  <div class="columns">
+    <div class="column col-12">
+      <form class="form-horizontal">
+        <div class="columns">
+          <div class="column col-6">
+            <div class="form-group">
+              <input
+                type="number"
+                class="form-input input-lg"
+                placeholder="X Coordinate"
+                ng-model="$ctrl.xCoord" />
+            </div>
+          </div>
+          <div class="column col-6">
+            <div class="form-group">
+              <input
+                type="number"
+                class="form-input input-lg"
+                placeholder="Y Coordinate"
+                ng-model="$ctrl.yCoord" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="column col-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Value</th>
+            <th>Distance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="point in $ctrl.points | orderBy:'distance'">
+            <td class="point-id">{{ point.id }}</td>
+            <td class="point-value">{{ point.value }}</td>
+            <td class="point-distance">{{ point.distance }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

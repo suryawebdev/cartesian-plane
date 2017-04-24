@@ -1,0 +1,33 @@
+.cartesian {
+  padding-top: 40px;
+}
+
+.table {
+  border: .1rem solid #454d5d;
+
+  td, th {
+    // text-align: center;
+  }
+
+  td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid #454d5d;
+  }
+
+  tr:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
+
+  .point-id {
+    width: 20%;
+  }
+  .point-value {
+    width: 40%
+  }
+  .point-distance {
+    width: 40%;
+  }
+}

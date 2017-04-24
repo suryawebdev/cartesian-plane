@@ -1,0 +1,39 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #e7e9ed;
+  padding-bottom: 80px;
+}
+
+header {
+  background-color: #ffffff;
+}
+
+footer {
+  padding-top: 40px;
+}
+
+.container{
+  &.container-fixed {
+    max-width: 98rem;
+  }
+}
+
+.form-horizontal {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+[ng-cloak] {
+  display: none;
+}
